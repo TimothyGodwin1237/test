@@ -1,0 +1,15 @@
+.app-bar-wrappers {
+  position:sticky;
+  top: 0;
+  background-color: white;
+  padding: 0rem 7rem 0rem 7rem;
+  .btn-styles {
+    background-color: #f5f5f5;
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+    border-top: 3px solid #fcac45;
+    border-bottom: 3px solid #fcac45;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}

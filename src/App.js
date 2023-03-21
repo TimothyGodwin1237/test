@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { Grid, Divider } from "@material-ui/core";
+import TopAppBar from "./TopAppBar";
+import TaskLists from "./taskLists";
+
+import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid container className="main-wrapper">
+      <TopAppBar />
+      <Divider className="top-divider" />
+      <Grid item xs={12} className="task-lists">
+        <TaskLists />
+      </Grid>
+    </Grid>
   );
 }
 
